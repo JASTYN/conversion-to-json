@@ -1,59 +1,158 @@
-"Anxiety":{"Restless”, “What can I do to help you?”, “Let’s listen to a song","3":"How many hours do you work?”, “Are you happy with your current job?”, “Hope these images will help you",
+{
+ "intents": [
+      {
+       "tag": "greeting",      
+       "responses": ["Hello , thanks for visiting TechVidvan","Good to see you again! ",
+        "Hi , how can I help?"],
+       "set": ""
+      },
+      {
+       "tag": "botstatus",
+       "patterns": ["How are you doing?","Whats up","are you fine"],
+       "responses": ["I am fine.Thanks for asking.","I am doing good."],
+       "set": ""
+      },
+      {
+       "tag": "Restless",
+       "responses": [ "What can I do to help you?”, “Let’s listen to a song","How many hours do you work?”, “Are you happy with your current job?”, “Hope these images will help you"],
+       "set": ""
+      },
+      {
+       "tag": "Fatigue",
+       "responses": ["How much free time do you get?”, “What are your hobbies?","Do you have any physical illnesses so far? “You are experiencing this now does not mean that you will be dealing with it the rest of your life”, “Try to watch sport event or listen to epic song for get goosebumps"],
+       "set": ""
+      },
+      {
+       "tag": "Difficult Concentration",
+       "responses": ["What is your best memory for a team work. Can you share it ?","What is your favorite subject from childhood?”, “Concentrate to natural sound , raining”, “Sorry to hear of your situation.”, “Concentrate on your path to success by removing unwanted dreams or things",],
+       "set": ""
+      },
+      {
+       "tag": "Irritable",
+       "responses": ["Are you nervous on performing novel tasks?”,“Don’t expect so much things in life”, “Higher expectation causes so much mental instability”, “Feelings are never wrong, but it can help to understand where they come from and talk to someone who can teach you healthy ways to cope”, “Try to make some jokes in your friend group or circle to decrease irritability"],
+       "set": ""
+      },
+      {
+       "tag": "Sleeping Disorder",
+       "responses": ["Try to get minimum 6 hour sleep"," Sleeping difficulties, irritability and anxiety attacks all are correlated with these mood disorders. And it\u2019s actually quite common for someone to deal encounter this during their lifetime.”, “Just because you are experiencing this now does not mean that you will be dealing with it the rest of your life”, “Do not drink sleeping pills frequently”, “Try to build some dream for achieving your life time if your do not have"]
+      },
+      {
+       "tag": "Migraine",
+       "responses": ["Constipation”, “Are you having three meals a day at right time?”, “You should drink more water”, “Better to get the meal at right time”, “Make sure to eat more in  morning”, “Make sure to eat less in night",]
+      },
+      {
+       "tag": "Mood swings",
+       "responses": ["Don’t try to keep straight face in every condition”, “Always try to be neutral about everything”, “If you angry person, try to wait couple of seconds before reacting to anything”, “The more you prepared and practiced, the more your confidence level increased.”, “Try to make some jokes in your friend group or circle to  decrease irritability"],
+       "set": ""
+      },
+      {
+       "tag": "Food cravings",
+       "responses": ["were you sad?”, “Were you bored?"," Is your diet properly balanced?”, “Were you dehydrated?”, “Good time for Pizza"],
+       "filter": "orderid",
+       "set": "historydetails"
+      },
+      {
+       "tag": "Increased thirst and urination",
+       "responses": ["Please make sure you have no physical illnesses(Diabetics etc.)","Try to drink more water to  reduce the dehydration”, “Try to eat healthy vegetables and fruits”, “Try to be relax when excessive tired feelings occurred”, “Try to do exercises for proper blood circulation in body"],
+       "filter": "historydetails"
+      },
+      {
+       "tag": "Frequent yawning",
+       "responses": ["Feeling tired ?","Poor sleep ?","Don't sleep at noon except if you have awake overnight”, “Do not awake in night time for nothing”, “don’t eat too much short foods in between meals. "],
+       "filter": "orderid"
+      },
+      {
+       "tag": "Feeling sad",
+       "responses": ["Do you want to talk about it?”, “I understand, you've being going through a lot”, “Let’s drink a glass of water shall we?”, “Let us go for a walk and talk”, “Sadness requires more muscles in face while smile requires small amount of muscles to show it"],
+       "set": "productoffers"
+      },
+      {
+       "tag": "Feeling empty",
+       "responses": ["Do you want to talk about it?”, “Would you like some company for a while?”, “Try to look at the environment in different angles. It will fill your soul.”, “Try to pet a dog or cat or own animal.”, “emptiness can be easily filled by interests. Be kind to fill emptiness with good interest"],
+       "filter": "productoffers"
+      },
+      {
+          "tag": "Feeling hopeless",
+          "responses": ["Is your diet properly balanced?”, “Were you dehydrated?”, “Good time for Pizza"],
+          "filter": "productoffers"
+         },
 
 
-"Fatigue”, “How much free time do you get?”, “What are your hobbies?","3":"Do you have any physical illnesses so far? “You are experiencing this now does not mean that you will be dealing with it the rest of your life”, “Try to watch sport event or listen to epic song for get goosebumps",
-
-"Difficult Concentration”, “What is your best memory for a team work. Can you share it ?","What is your favorite subject from childhood?”, “Concentrate to natural sound , raining”, “Sorry to hear of your situation.”, “Concentrate on your path to success by removing unwanted dreams or things",
-
-"Irritable”, “Are you nervous on performing novel tasks?”, “Don’t expect so much things in life”, “Higher expectation causes so much mental instability”, “Feelings are never wrong, but it can help to understand where they come from and talk to someone who can teach you healthy ways to cope”, “Try to make some jokes in your friend group or circle to decrease irritability",
-
-"Sleeping Disorder \/ Sleepless”, “Try to get minimum 6 hour sleep"," Sleeping difficulties, irritability and anxiety attacks all are correlated with these mood disorders. And it\u2019s actually quite common for someone to deal encounter this during their lifetime.”, “Just because you are experiencing this now does not mean that you will be dealing with it the rest of your life”, “Do not drink sleeping pills frequently”, “Try to build some dream for achieving your life time if your do not have",
-
-"Migraine":{"Constipation”, “Are you having three meals a day at right time?”, “You should drink more water”, “Better to get the meal at right time”, “Make sure to eat more in  morning”, “Make sure to eat less in night",
-
-"Mood swings”, “Don’t try to keep straight face in every condition”, “Always try to be neutral about everything”, “If you angry person, try to wait couple of seconds before reacting to anything”, “The more you prepared and practiced, the more your confidence level increased.”, “Try to make some jokes in your friend group or circle to  decrease irritability",
-
-"Food cravings”, “were you sad?”, “Were you bored?"," Is your diet properly balanced?”, “Were you dehydrated?”, “Good time for Pizza",
-
-"Increased thirst and urination”, “Please make sure you have no physical illnesses(Diabetics etc.)","Try to drink more water to  reduce the dehydration”, “Try to eat healthy vegetables and fruits”, “Try to be relax when excessive tired feelings occurred”, “Try to do exercises for proper blood circulation in body",
-
-"Frequent yawning”, “Feeling tired ?","Poor sleep ?","Don't sleep at noon except if you have awake overnight”, “Do not awake in night time for nothing”, “don’t eat too much short foods in between meals. ",
-
-"Feeling sad”, “Do you want to talk about it?”, “I understand, you've being going through a lot”, “Let’s drink a glass of water shall we?”, “Let us go for a walk and talk”, “Sadness requires more muscles in face while smile requires small amount of muscles to show it",
-
-"Feeling empty”, “Do you want to talk about it?”, “Would you like some company for a while?”, “Try to look at the environment in different angles. It will fill your soul.”, “Try to pet a dog or cat or own animal.”, “emptiness can be easily filled by interests. Be kind to fill emptiness with good interest",
-
-"Feeling hopeless”, “Do you want to talk about it?”, “Do you want to concern therapist?”, “Shall I suggest an exercise in mindful awareness?”, “How about a walk and relax yourself?”, “Dreams can be achieved if we put certain amount of amount to that purpose.”
-
-"Feeling worthless”, “Do you want to talk about it?”, “If you are feeling worthless, think about the man who are creating terms and regulations set for software’s. “You need to take just one step to chase your dream”, “To be worthy, you have remove negative feelings and get a good leap of faith”, “Always help friends or people when help needed. That will increase your worth",
-
-"Feeling excessively guilty”, “Do you want to talk about it? “Everybody have their own sins. Don't think that you are the only one having”, “Don’t punish yourself because someone scolds and undermine you.”, “Try to learn lessons from mistakes or wrongdoings which you have done”, “At any time, you can be phoenix bird and rise again.”
-
-"Anger”, “Do you want to talk about it? “Everybody are doing mistakes .It is the nature”, “Human kind is so complicated. No need to angry about people or materials or incidents.”, “Human life is very short. Use the limited time to enjoy yourself rather than hate it”, “Anger is pushing you backwards. Don't let anger to destroy your dreams",
-
-"Irritability”, “Do you want to talk about it?”, “Do not expect people give this answer or do this work. Usually, unknown things can happen. That is the way of life.”, “For reduce irritability,  try to gather with friends, watch some show ,to to calm your nerves”, “Irritability can be reduced .For that try to be positive even in bad situations”, “When you have difficult task, try to break down to simple things",
-
-"Difficulty of Concentration”, “Do you want to talk about it?”, “What is your best memory for a team work. Can you share it?”, “What is your favorite subject from childhood?”, “Concentrate to natural sound, raining”, “Sorry to hear of your situation.”
+         {
+          "tag": "Feeling worthless",
+          "responses": ["Do you want to talk about it?”,“If you are feeling worthless, think about the man who are creating terms and regulations set for software’s. “You need to take just one step to chase your dream”, “To be worthy, you have remove negative feelings and get a good leap of faith”, “Always help friends or people when help needed. That will increase your worth"],
+          "filter": "productoffers"
+         },
 
 
+         {
+          "tag": "Feeling excessively guilty",
+          "responses": [" Is your diet properly balanced?”,“Were you dehydrated?”, “Good time for Pizza"],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Anger",
+          "responses": ["Do you want to talk about it? “Everybody are doing mistakes .It is the nature”, “Human kind is so complicated. No need to angry about people or materials or incidents.”, “Human life is very short. Use the limited time to enjoy yourself rather than hate it”, “Anger is pushing you backwards. Don't let anger to destroy your dreams"],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Irritability",
+          "responses": ["Do you want to talk about it?”,“Do not expect people give this answer or do this work. Usually, unknown things can happen. That is the way of life.”, “For reduce irritability,  try to gather with friends, watch some show ,to to calm your nerves”, “Irritability can be reduced .For that try to be positive even in bad situations”, “When you have difficult task, try to break down to simple things"],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Difficulty of Concentration",
+          "responses": ["Do you want to talk about it?”,“What is your best memory for a team work. Can you share it?”, “What is your favorite subject from childhood?”, “Concentrate to natural sound, raining”, “Sorry to hear of your situation."],
+          "filter": "productoffers"
+         },
 
-"Stress":{"Headache”, “Do you want to drink a coffee?”, “Shall I make an appointment to concern a doctor?”, “Apply some balm on your forehanded”, “Shall I recommend some good balm?”, “Put Panadol after a meal ","Better off lights","7":"Do you want to drink a ginger tea?”
+         {
+          "tag": "Headache",
+          "responses": ["Do you want to drink a coffee?”, “Shall I make an appointment to concern a doctor?”, “Apply some balm on your forehanded”, “Shall I recommend some good balm?”, “Put Panadol after a meal ","Better off lights","Do you want to drink a ginger tea?"],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Dizziness",
+          "responses": ["Drink water and stay hydrated”, “Do you want to drink a ginger tea?”, “Shall I make an appointment to concern a doctor?”, “Better to get some sleep”, “Let’s do some medications"],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Muscle tension",
+          "responses": ["Let’s do some medications”, “How about stretching”, “Apply some muscle balm or spray to relax your muscle”, “Drink water regularly”, “Eat healthy foods"],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Stomach problems",
+          "responses": ["Avoid unhealthy food”, “Shall I make an appointment to concern a doctor?”, “Drink coma water”, “Apply vapor rub on the belly”, “Maintain balance diet",],
+          "filter": "productoffers"
+         },
 
-
-"Dizziness”, “Drink water and stay hydrated”, “Do you want to drink a ginger tea?”, “Shall I make an appointment to concern a doctor?”, “Better to get some sleep”, “Let’s do some medications",
-
-"Muscle tension”, “Let’s do some medications”, “How about stretching”, “Apply some muscle balm or spray to relax your muscle”, “Drink water regularly”, “Eat healthy foods",
-
-"Stomach problems”, “Avoid unhealthy food”, “Shall I make an appointment to concern a doctor?”, “Drink coma water”, “Apply vapor rub on the belly”, “Maintain balance diet",
-
-
-"Chest pain”, “Drink hot water or any hot drinks”, “lying down with the head elevated above the body”, “Dial 119","Concern Doctor immediately",
-
-
-"Feeling sad”, “Do you want to talk about it?”, “I understand, you've being going through a lot”, “Let’s drink a glass of water shall we?”, “Let us go for a walk and talk”, “Sadness requires more muscles in face while smile requires small amount of muscles to show it",
-
-"Feeling empty”, “Listen good music”, “Get some good deep sleep”, “Talk with your friends”, “Go out and hangout with your friends”, “engage in self-care ","Learn new skills",
-
-"Feeling hopeless”, “Do you want to talk about it?”, “Do you want to concern therapist?”, “Shall I suggest an exercise in mindful awareness?”, “How about a walk and relax yourself?”, “Dreams can be achieved if we put certain amount of amount to that purpose.”
-
-"Feeling worthless”, “Do you want to talk about it?”, “If you are feeling worthless, think about the man who are creating terms and regulations set for software’s. “You need to take just one step to chase your dream”, “To be worthy, you have remove negative feelings and get a good leap of faith”, “Always help friends or people when help needed. That will increase your worth",
+         {
+          "tag": "Chest pain",
+          "responses": ["Drink hot water or any hot drinks”, “lying down with the head elevated above the body”, “Dial 119","Concern Doctor immediately"],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Feeling sad",
+          "responses": ["Do you want to talk about it?”, “I understand, you've being going through a lot”, “Let’s drink a glass of water shall we?”, “Let us go for a walk and talk”, “Sadness requires more muscles in face while smile requires small amount of muscles to show it"],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Feeling empty",
+          "responses": ["Listen good music”, “Get some good deep sleep”, “Talk with your friends”, “Go out and hangout with your friends”, “engage in self-care ","Learn new skills",],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Feeling hopeless",
+          "responses": ["Do you want to talk about it?”, “Do you want to concern therapist?”, “Shall I suggest an exercise in mindful awareness?”, “How about a walk and relax yourself?”, “Dreams can be achieved if we put certain amount of amount to that purpose."],
+          "filter": "productoffers"
+         },
+         {
+          "tag": "Feeling worthless",
+          "responses": ["Do you want to talk about it?”, “If you are feeling worthless, think about the man who are creating terms and regulations set for software’s. “You need to take just one step to chase your dream”, “To be worthy, you have remove negative feelings and get a good leap of faith”, “Always help friends or people when help needed. That will increase your worth"],
+          "filter": "productoffers"
+         }
+     
+      
+ ]
+}
