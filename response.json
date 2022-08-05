@@ -42,99 +42,98 @@
       {
        "tag": "Food cravings",
        "responses": ["were you sad?”, “Were you bored?"," Is your diet properly balanced?”, “Were you dehydrated?”, “Good time for Pizza"],
-       "filter": "orderid",
-       "set": "historydetails"
+       "set": ""
       },
       {
        "tag": "Increased thirst and urination",
        "responses": ["Please make sure you have no physical illnesses(Diabetics etc.)","Try to drink more water to  reduce the dehydration”, “Try to eat healthy vegetables and fruits”, “Try to be relax when excessive tired feelings occurred”, “Try to do exercises for proper blood circulation in body"],
-       "filter": "historydetails"
+     
       },
       {
        "tag": "Frequent yawning",
        "responses": ["Feeling tired ?","Poor sleep ?","Don't sleep at noon except if you have awake overnight”, “Do not awake in night time for nothing”, “don’t eat too much short foods in between meals. "],
-       "filter": "orderid"
+       
       },
       {
        "tag": "Feeling sad",
        "responses": ["Do you want to talk about it?”, “I understand, you've being going through a lot”, “Let’s drink a glass of water shall we?”, “Let us go for a walk and talk”, “Sadness requires more muscles in face while smile requires small amount of muscles to show it"],
-       "set": "productoffers"
+       "set": ""
       },
       {
        "tag": "Feeling empty",
        "responses": ["Do you want to talk about it?”, “Would you like some company for a while?”, “Try to look at the environment in different angles. It will fill your soul.”, “Try to pet a dog or cat or own animal.”, “emptiness can be easily filled by interests. Be kind to fill emptiness with good interest"],
-       "filter": "productoffers"
+       
       },
       {
           "tag": "Feeling hopeless",
           "responses": ["Is your diet properly balanced?”, “Were you dehydrated?”, “Good time for Pizza"],
-          "filter": "productoffers"
+          
          },
 
 
          {
           "tag": "Feeling worthless",
           "responses": ["Do you want to talk about it?”,“If you are feeling worthless, think about the man who are creating terms and regulations set for software’s. “You need to take just one step to chase your dream”, “To be worthy, you have remove negative feelings and get a good leap of faith”, “Always help friends or people when help needed. That will increase your worth"],
-          "filter": "productoffers"
+          
          },
 
 
          {
           "tag": "Feeling excessively guilty",
           "responses": [" Is your diet properly balanced?”,“Were you dehydrated?”, “Good time for Pizza"],
-          "filter": "productoffers"
+          
          },
          {
           "tag": "Anger",
           "responses": ["Do you want to talk about it? “Everybody are doing mistakes .It is the nature”, “Human kind is so complicated. No need to angry about people or materials or incidents.”, “Human life is very short. Use the limited time to enjoy yourself rather than hate it”, “Anger is pushing you backwards. Don't let anger to destroy your dreams"],
-          "filter": "productoffers"
+         
          },
          {
           "tag": "Irritability",
           "responses": ["Do you want to talk about it?”,“Do not expect people give this answer or do this work. Usually, unknown things can happen. That is the way of life.”, “For reduce irritability,  try to gather with friends, watch some show ,to to calm your nerves”, “Irritability can be reduced .For that try to be positive even in bad situations”, “When you have difficult task, try to break down to simple things"],
-          "filter": "productoffers"
+         
          },
          {
           "tag": "Difficulty of Concentration",
           "responses": ["Do you want to talk about it?”,“What is your best memory for a team work. Can you share it?”, “What is your favorite subject from childhood?”, “Concentrate to natural sound, raining”, “Sorry to hear of your situation."],
-          "filter": "productoffers"
+          
          },
 
          {
           "tag": "Headache",
           "responses": ["Do you want to drink a coffee?”, “Shall I make an appointment to concern a doctor?”, “Apply some balm on your forehanded”, “Shall I recommend some good balm?”, “Put Panadol after a meal ","Better off lights","Do you want to drink a ginger tea?"],
-          "filter": "productoffers"
+          
          },
          {
           "tag": "Dizziness",
           "responses": ["Drink water and stay hydrated”, “Do you want to drink a ginger tea?”, “Shall I make an appointment to concern a doctor?”, “Better to get some sleep”, “Let’s do some medications"],
-          "filter": "productoffers"
+         
          },
          {
           "tag": "Muscle tension",
           "responses": ["Let’s do some medications”, “How about stretching”, “Apply some muscle balm or spray to relax your muscle”, “Drink water regularly”, “Eat healthy foods"],
-          "filter": "productoffers"
+        
          },
          {
           "tag": "Stomach problems",
           "responses": ["Avoid unhealthy food”, “Shall I make an appointment to concern a doctor?”, “Drink coma water”, “Apply vapor rub on the belly”, “Maintain balance diet",],
-          "filter": "productoffers"
+         
          },
 
          {
           "tag": "Chest pain",
           "responses": ["Drink hot water or any hot drinks”, “lying down with the head elevated above the body”, “Dial 119","Concern Doctor immediately"],
-          "filter": "productoffers"
+         
          },
          {
           "tag": "Feeling sad",
           "responses": ["Do you want to talk about it?”, “I understand, you've being going through a lot”, “Let’s drink a glass of water shall we?”, “Let us go for a walk and talk”, “Sadness requires more muscles in face while smile requires small amount of muscles to show it"],
-          "filter": "productoffers"
+         
          },
          {
           "tag": "Feeling empty",
           "responses": ["Listen good music”, “Get some good deep sleep”, “Talk with your friends”, “Go out and hangout with your friends”, “engage in self-care ","Learn new skills",],
-          "filter": "productoffers"
+          
          },
          {
           "tag": "Feeling hopeless",
